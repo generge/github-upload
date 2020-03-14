@@ -1,0 +1,15 @@
+  ;绕X轴旋转90度
+    (setq transMat (vlax-tmatrix '((1 0 0 0)
+                                   (0 0 -1 0)
+                                   (0 1 0 0)
+                                   (0 0 0 1))))
+  ;背板，门板旋转矩阵
+    (setq transMat (vlax-tmatrix '((-1 0 0 0)
+                                   (0 0 -1 0)
+                                   (0 1 0 0)
+                                   (0 0 0 1))))
+  ;侧板旋转矩阵
+    (setq transMat (vlax-tmatrix '((0 0 -1 0.5)
+                                   (0 -1 0 0)
+                                   (1 0 0 0)
+                                   (0 0 0 1))))
